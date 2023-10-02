@@ -1,8 +1,9 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Ubuntu } from 'next/font/google'
+import cls from 'classnames';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Ubuntu({ subsets: ['latin'],  weight: ['400'], style: ['normal'], display: 'swap' })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,7 +17,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <title>CV</title>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+      </head>
+      <body className={cls(
+        'grid',
+        'min-h-screen',
+        'place-items-center',
+        'bg-gray-400',
+        'print:min-h-0',
+        'text-justify',
+        inter.className)}>{children}</body>
     </html>
   )
 }
