@@ -229,7 +229,7 @@
         "pages": [
             {
                 "sider": ["skills"],
-                "content": ["experiences[0:4]"]
+                "content": ["experiences[:5]"]
             },
             {
                 "sider": ["languages", "hobbies"],
