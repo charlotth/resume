@@ -6,6 +6,9 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --color-primary-h: 340;
+  --color-primary-s: 84%;
+  --color-primary-l: 58.4%;
 }
 
 html {
@@ -20,4 +23,43 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+@layer base {
+  .picker {
+    position: relative;
+  }
+  .swatch {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  .popover {
+    position: absolute;
+    top: 12px;
+    left: 50x;
+    border-radius: 9px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background: #fff;
+  }
+
+  .picker__swatches {
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+
+  .picker__swatch {
+    width: 22px;
+    height: 22px;
+    margin: 4px;
+    border: none;
+    padding: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+  }
 }

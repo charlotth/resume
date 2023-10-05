@@ -10,7 +10,7 @@ const Page: React.FC<React.PropsWithChildren<PageProps>> = ({ header, sider, chi
             <div className="bg-primary-100 border-r-2 border-primary-800 h-full px-4 py-2">
                 {sider}
             </div>
-            <div className="col-span-2 px-4 py-2">
+            <div className="col-span-2 px-2 py-2">
                 {children}
             </div>
         </div>
