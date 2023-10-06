@@ -141,8 +141,9 @@ const Group: React.FC<{ resumes: ResumeGroup }> = ({ resumes }) => {
           color={color}
           onChange={setColor}
           presetColors={presetColors}
+          className='flex-initial w-42'
         />
-        <p className="text-sm font-medium text-gray-500">Custom Color</p>
+        <input className="text-sm rounded border border-gray-300 flex-1 w-0 p-1" type='text' value={color} onChange={(e) => { setColor(e.target.value); }} />
       </div>
       </div>
 

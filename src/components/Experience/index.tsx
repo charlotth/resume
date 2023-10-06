@@ -15,7 +15,7 @@ export interface ExperienceProps {
 const Experience: React.FC<ExperienceProps> = ({ title, society, date, contact, description, tools, tasks, className }) => (
     <section className={cls("px-4", "mb-4", className)}>
         <h3 className="text-lg font-bold">{title}
-            {society && (<span className="text-primary-600 ml-1">@ {society}</span>)}
+            {society && (<span className="text-primary ml-1">@ {society}</span>)}
         </h3>
         <h4 className="text-gray-600 text-sm italic">{date}
             {contact && (<span className="text-gray-400 ml-2">&lt;{contact}&gt;</span>)}

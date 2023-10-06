@@ -3,6 +3,10 @@ import chroma from 'chroma-js';
 export const getColor = (color: string) => chroma(color);
 
 export const getPalette = (color: string) => {
+  const defaultColor = '#ee3c76';
+  if (color.length != 4 && color.length != 7) {
+    color = defaultColor;
+  }
   const colors = chroma.scale(['white', color, 'black']);
   const palette = [];
 

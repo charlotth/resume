@@ -10,7 +10,7 @@ export interface SkillGroupProps {
 const SkillGroup: React.FC<SkillGroupProps> = ({ title, skills, invert, size }) => {
     const className = cls(
         `px-2 py-0.5 text-${size === 'small' ? 'xs' : 'sm'} rounded`,
-        invert ? "text-gray-600 bg-gray-200" : "bg-primary-600 text-white"
+        invert ? "text-gray-600 bg-gray-200" : "bg-primary text-white"
     );
 
     return (

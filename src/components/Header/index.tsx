@@ -8,7 +8,7 @@ export interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ name, title, description, avatar, items }) => (
     <header>
-        <div className="bg-primary-600 px-4 py-3 flex flew-row justify-between">
+        <div className="bg-primary px-4 py-3 flex flew-row justify-between">
             <div className="flex flex-col justify-center">
                 <h1 className="text-white text-xl">{name}</h1>
                 <h2 className="text-white text-xl uppercase">{title}</h2>

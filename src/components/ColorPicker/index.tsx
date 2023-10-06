@@ -1,21 +1,23 @@
 import { HexColorPicker } from "react-colorful"
 import useClickOutside from "./useClickOutside"
 import { useCallback, useRef, useState } from "react"
+import cls from "classnames";
 
 export interface ColorPickerProps {
     color?: string;
     onChange: (color: string) => void;
     presetColors?: string[];
+    className?: string;
 }
 
-const ColorPicker: React.FC<ColorPickerProps> = ({ color, onChange, presetColors }) => {
+const ColorPicker: React.FC<ColorPickerProps> = ({ color, onChange, presetColors, className }) => {
   const popover = useRef<HTMLDivElement>(null);
   const [isOpen, toggle] = useState(false);
   const close = useCallback(() => toggle(false), []);
   useClickOutside(popover, close);
 
   return (
-    <div className="picker">
+    <div className={cls("picker", className)}>
       <div
         className="swatch"
         style={{ backgroundColor: color }}
