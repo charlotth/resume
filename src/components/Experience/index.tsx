@@ -10,10 +10,16 @@ export interface ExperienceProps {
     tools?: string[];
     tasks?: string[];
     className?: string;
+    isSub?: boolean;
+    isLast?: boolean
 }
 
-const Experience: React.FC<ExperienceProps> = ({ title, society, date, contact, description, tools, tasks, className }) => (
-    <section className={cls("px-4", "mb-4", className)}>
+const Experience: React.FC<ExperienceProps> = ({ title, society, date, contact, description, tools, tasks, className, isSub, isLast }) => (
+    <section className={cls("px-4 mb-4",
+          className,
+          isSub && "ml-8 border-l border-gray-400 border-dashed",
+          isLast ? "mb-4 pb-0" : "pb-4 mb-0"
+    )}>
         <h3 className="text-lg font-bold">{title}
             {society && (<span className="text-primary ml-1">@ {society}</span>)}
         </h3>

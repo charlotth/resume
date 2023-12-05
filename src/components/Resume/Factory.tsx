@@ -16,6 +16,7 @@ function getData(d: Resume, path: string) {
     }
 
     // get section
+    const section = m[1];
     var arr = get(d, m[1]);
     if (arr === undefined) {
         return undefined;
@@ -24,16 +25,30 @@ function getData(d: Resume, path: string) {
         return undefined;
     }
 
+    var flatten = arr.reduce((acc, current) => {
+      var subs = get(current, section);
+      if (Array.isArray(subs)) {
+        acc.push({ ...current, [section]: undefined });
+        subs.forEach(sexp => {
+          acc.push({...sexp, isSub: true });
+        });
+        acc[acc.length -1].isLast = true;
+      } else {
+        acc.push(current);
+      }
+      return acc;
+    }, []);
+
     // get range
     if (!m[2]) {
-        return { name: m[1], items: arr };
+        return { name: m[1], items: flatten };
     }
 
     const parts = m[2].substring(1, m[2].length - 1).split(':');
 
     if (parts.length == 1) {
         const index = parseInt(parts[0]);
-        return !isNaN(index) ? arr[index] : undefined;
+        return !isNaN(index) ? flatten[index] : undefined;
     }
 
     const from = parseInt(parts[0]);
@@ -41,11 +56,11 @@ function getData(d: Resume, path: string) {
 
     return {
         name: m[1],
-        items: arr.slice(isNaN(from) ? undefined : from, isNaN(to) ? undefined : to)
+        items: flatten.slice(isNaN(from) ? undefined : from, isNaN(to) ? undefined : to)
     }
 }
 
-export const Factory: React.FC<{ source: string; data: Resume }> = ({ source, data }) => {
+export const Factory: React.FC<{ source: string; data: Resume, page?: number }> = ({ source, data, page }) => {
     const d = getData(data, source);
 
     switch (d?.name) {
@@ -61,7 +76,7 @@ export const Factory: React.FC<{ source: string; data: Resume }> = ({ source, da
         case 'experiences':
             return (
                 <>
-                    <Title>Expériences</Title>
+                    {!page && (<Title>Expériences</Title>)}
                     {(d.items as Resume['experiences']).map((v, i) => (
                         <Experience {...v} key={i} />
                     ))}

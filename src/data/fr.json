@@ -1,241 +1,313 @@
 {
-    "profile": {
-        "name": "Thomas CHARLOT",
-        "avatar": "https://media.licdn.com/dms/image/D4E03AQEYVx8kFjZZHQ/profile-displayphoto-shrink_200_200/0/1692695262237?e=1701907200&v=beta&t=wkWlrVZnAnOkHQkxNZIQsY5qGTihte7fxDBUwAXHl7s",
-        "title": "Architecte technique senior",
-        "description": "Fort de 15 ans d'expérience, dont 7 ans en tant que CTO et principal artisan de Datasweet, j'ai acquis une vision globale du métier d'architecte technique. Fédérateur, polyvalent, autonome et rigoureux, je saurai vous apporter les clefs pour réussir le développement de vos projets.",
-        "email": "thomas.charlot@gmail.com",
-        "phone": "06.38.18.09.79",
-        "location": "Houilles (78)",
-        "github": "github.com/datasweet"
+  "profile": {
+    "name": "Thomas CHARLOT",
+    "avatar": "/1692695262563.jpeg",
+    "title": "Architecte technique",
+    "description": "Fort de 15 ans d'expérience, dont 7 ans en tant que CTO et principal artisan de Datasweet, j'ai acquis une vision globale du métier d'architecte technique. Fédérateur, polyvalent, autonome et rigoureux, je saurai vous apporter les clefs pour réussir le développement de vos projets.",
+    "email": "thomas.charlot@gmail.com",
+    "phone": "06.38.18.09.79",
+    "location": "Houilles (78)",
+    "github": "github.com/datasweet"
+  },
+  "skills": [
+    {
+      "categorie": "Langages",
+      "items": [
+        "Go",
+        "C#",
+        "Typescript",
+        "Shell",
+        "Java",
+        "Python"
+      ]
     },
-    "skills": [
-        {
-            "categorie": "Langages",
-            "items": [
-                "Go",
-                "C#",
-                "Typescript",
-                "Javascript (ES6+)",
-                "Shell",
-                "Java",
-                "Python"
-            ]
-        },
-        {
-            "categorie": "Frameworks & Librairies",
-            "items": [
-                ".NET",
-                "React",
-                "Next.js",
-                "Mobx",
-                "Antd",
-                "Mui",
-                "Tailwind"
-            ]
-        },
-        {
-            "categorie": "Base de données",
-            "items": [
-                "Oracle",
-                "Postgres",
-                "SQL Server",
-                "Elasticsearch",
-                "Redis",
-                "MongoDB",
-                "Hive"
-            ]
-        },
-        {
-            "categorie": "Cloud & Tools",
-            "items": [
-                "Docker",
-                "Swarm",
-                "Kubernetes",
-                "Azure",
-                "GCP",
-                "IaC",
-                "Nats.io",
-                "RabbitMQ",
-                "Keycloak"
-            ]
-        },
-        {
-            "categorie": "Pratiques",
-            "items": [
-                "Software craftsmanship",
-                "Agilité",
-                "CI/CD",
-                "Micro service",
-                "OAuth",
-                "Design patterns",
-                "Clean architecture",
-                "CQRS",
-                "DDD",
-                "TDD"
-            ]
-        },
-        {
-            "categorie": "Médias",
-            "items": [
-                "Photoshop",
-                "Premiere",
-                "After Effect",
-                "Soundbooth",
-                "Image Magick"
-            ]
-        }
-    ],
-    "experiences": [
-        {
-            "title": "Practice Leader Data",
-            "society": "Capfi",
-            "date": "Mars 2023 à aujourd'hui",
-            "contact": "Damien Beaudrey",
-            "description": "Urbanisation SI. Projet basé sur le socle technique Datasweet",
-            "tools": ["Go", "React", "Python", "Redis", "Elasticsearch", "Docker", "Selenium"],
-            "tasks": [
-                "Ingestion des appels d'offres des plateformes : BNP, Natixis, SG, Engie, etc.",
-                "Enrichissement des offres avec l'IA (OpenAI)",
-                "Orchestration, centralisation des données d'Hubspot, Strapi et Fitnet",
-                "Création de dashboards analytiques avec Kibana"
-            ]
-        },
-        {
-            "title": "Tech Leader .NET",
-            "society": "Société Générale CIB",
-            "date": "Novembre 2022 à mars 2023",
-            "contact": "Marc Girollet",
-            "tools": [".NET", "Jenkins", "WinDBG", "Protobuf"],
-            "description": "XOne Project - Team Infra",
-            "tasks": [
-                "Migration de projets .NET4 vers .NET Core 7 et création de pipeline Jenkins",
-                "Détection des erreurs dans les fichiers .protos"
-            ]
-        },
-        {
-            "title": "Tech Leader Data .NET",
-            "society": "Natixis",
-            "date": "Mai 2021 à octobre 2022",
-            "contact": "Geoffrey Lardé",
-            "description": "Optimisation du processus de calcul d'observabilité des deals (stock 1M/jour)",
-            "tools": [".NET", "C++", "Oracle", "Autosys"],
-            "tasks": [
-                "Profiling .NET via les API Windows",
-                "Réarchitecture du projet : CQRS, Producer-consumer pattern, multi-threading",
-                "Correction des erreurs techniques (Linq, XmlSerializer, etc.)",
-                "Gain obtenu : 66% sur le traitement global"
-            ]
-        },
-        {
-            "title": "Tech Leader Data Go",
-            "society": "Figaro Classifieds",
-            "date": "Décembre 2020 à avril 2021",
-            "description": "Ingestion des annonces d'emploi de plateformes publiques",
-            "tasks": [
-                "ETL : flow pattern en Go",
-                "Contraintes fortes : ingérer plusieurs centaines de milliers d'annonces par jour dans des ressources limitées (proc, mémoire pour GCP)"
-            ]
-        },
-        {
-            "title": "Co-founder & CTO",
-            "society": "Datasweet",
-            "date": "Juillet 2016 à aujourd'hui",
-            "contact": "Lionel Froment",
-            "description": "Datasweet est une data-plateforme basé sur Elasticsearch et couvrant toute la chaîne de valorisation de données",
-            "tools": ["Go", "React", "Elasticsearch", "Redis", "Postgres", "Protobuf", "Swarm", "Keycloak"],
-            "tasks": [
-                "Conception et développement de la data-plateforme (infra, back-end, front-end)",
-                "Micro (web) services avec Role Based Access Control",
-                "ETL permettant la préparation automatisée de données",
-                "API de search & query utilisée par des composants graphiques"
-            ]
-        },
-        {
-            "title": "Tech Leader .NET",
-            "society": "Natixis AM",
-            "date": "Janvier 2015 à juillet 2016",
-            "contact": "Guillaume Lavergne",
-            "description": "Titan: fwk pour passer des ordres, calculer des positions, rapprocher les flux, etc.",
-            "tools": [".NET", "SQL Server"],
-            "tasks": [
-                "Conception et développement d'un service de centralisation de configuration",
-                "Mise en place de logs via ETW",
-                "Migration du composant CRD (envoi d'ordres) avec une contrainte forte : permettre l'utilisation des deux versions de la dll"
-            ]
-        },
-        {
-            "title": "Développeur .NET",
-            "society": "Société Générale CIB",
-            "date": "Mai 2013 à janvier 2015",
-            "contact": "Arnaud Tamaillon",
-            "description": "Projet XOne : SI front-to-back multi-assets",
-            "tools": [".NET", "Oracle", "WinDBG", "TibcoEMS", "Infragistics", "AngularJS"],
-            "tasks": [
-                "Enrichissement du framework XOne Generic permettant la création de produits dont les caractéristiques peuvent évoluer à tout moment",
-                "Conception et développement d'un service de booking automatique de produits structurés via messages TibcoEMS",
-                "POC: web trade blotter avec AngularJS"
-            ]
-        },
-        {
-            "title": "Développeur Fullstack .NET",
-            "society": "Éditions Larousse",
-            "date": "Octobre 2008 à mai 2013",
-            "contact": "Vincent Baugé",
-            "tools": [".NET", "Java", "Perl", "JQuery", "HTML5/CSS3", "Lucene", "Objective-C", "C++"],
-            "tasks": [
-                "Refonte complète du site www.larousse.fr : SEO, moteur de recherche",
-                "Batchs pour le traitement massif de textes & images",
-                "Applications mobiles : iPhone, iPad, Android, WinJS, Windows Phone",
-                "Ingénieur son et monteur vidéo"
-            ]
-        }
-    ],
-    "trainings": [
-        {
-            "title": "Fondamentaux des marchés financiers",
-            "society": "First Finance",
-            "date": "2013"
-        },
-        {
-            "title": "Ingénieur en informatique - Génie Logiciel",
-            "society": "UTBM",
-            "date": "2008",
-            "description": "Mineur : stratégie d'innovation et choix technologiques"
-        }
-    ],
-    "languages": [
-        {
-            "label": "Français",
-            "level": "Maternelle"
-        },
-        {
-            "label": "Anglais",
-            "level": "Intermédiaire (B1)"
-        },
-        {
-            "label": "Allemand",
-            "level": "Basique (A1)"
-        }
-    ],
-    "hobbies": [
-        "Vélo",
-        "Running",
-        "Escalade",
-        "Judo",
-        "Jeux vidéo",
-        "Piano"
-    ],
-    "layout": {
-        "pages": [
-            {
-                "sider": ["skills"],
-                "content": ["experiences[:5]"]
-            },
-            {
-                "sider": ["languages", "hobbies"],
-                "content": ["experiences[5:]", "trainings"]
-            }
-        ]
+    {
+      "categorie": "Frameworks & Librairies",
+      "items": [
+        ".NET",
+        "React",
+        "Next.js",
+        "Mobx",
+        "Antd",
+        "Mui",
+        "Tailwind"
+      ]
+    },
+    {
+      "categorie": "Base de données",
+      "items": [
+        "Oracle",
+        "Postgres",
+        "SQL Server",
+        "Elasticsearch",
+        "Redis",
+        "MongoDB",
+        "Hive"
+      ]
+    },
+    {
+      "categorie": "Cloud & Tools",
+      "items": [
+        "Docker",
+        "Swarm",
+        "Kubernetes",
+        "Azure",
+        "GCP",
+        "IaC",
+        "Nats.io",
+        "RabbitMQ",
+        "Keycloak"
+      ]
+    },
+    {
+      "categorie": "Pratiques",
+      "items": [
+        "Software craftsmanship",
+        "Agilité",
+        "CI/CD",
+        "Micro service",
+        "OAuth",
+        "Design patterns",
+        "Clean architecture",
+        "CQRS",
+        "DDD",
+        "TDD"
+      ]
+    },
+    {
+      "categorie": "Médias",
+      "items": [
+        "Photoshop",
+        "Premiere",
+        "After Effect",
+        "Soundbooth",
+        "Image Magick"
+      ]
     }
+  ],
+  "experiences": [
+    {
+      "title": "Practice Leader Data",
+      "society": "Capfi",
+      "date": "Mars 2023 à aujourd'hui",
+      "contact": "Damien Beaudrey",
+      "description": "Urbanisation SI. Projet basé sur le socle technique Datasweet",
+      "tools": [
+        "Go",
+        "React",
+        "Python",
+        "Redis",
+        "Elasticsearch",
+        "Docker",
+        "Selenium"
+      ],
+      "tasks": [
+        "Ingestion des appels d'offres des plateformes : BNP, Natixis, SG, Engie, etc.",
+        "Enrichissement des offres avec l'IA (OpenAI)",
+        "Orchestration, centralisation des données d'Hubspot, Strapi et Fitnet",
+        "Création de dashboards analytiques avec Kibana"
+      ]
+    },
+    {
+      "title": "Tech Leader .NET",
+      "society": "Société Générale CIB",
+      "date": "Novembre 2022 à mars 2023 - 5 mois",
+      "contact": "Marc Girollet",
+      "tools": [
+        ".NET",
+        "Jenkins",
+        "WinDBG",
+        "Protobuf"
+      ],
+      "description": "XOne Project - Team Infra",
+      "tasks": [
+        "Migration de projets .NET4 vers .NET Core 7 et création de pipeline Jenkins",
+        "Détection des erreurs dans les fichiers .protos"
+      ]
+    },
+    {
+      "title": "Altanova",
+      "date": "7 ans et 10 mois",
+      "contact": "Lionel Froment",
+      "experiences": [
+        {
+          "title": "Tech Leader Data .NET",
+          "society": "Natixis",
+          "date": "Mai 2021 à octobre 2022 - 1 an et 6 mois",
+          "contact": "Geoffrey Lardé",
+          "description": "Optimisation du processus de calcul d'observabilité des deals (stock 1M/jour)",
+          "tools": [
+            ".NET",
+            "C++",
+            "Oracle",
+            "Autosys"
+          ],
+          "tasks": [
+            "Profiling .NET via les API Windows",
+            "Réarchitecture du projet : CQRS, Producer-consumer pattern, multi-threading",
+            "Correction des erreurs techniques (Linq, XmlSerializer, etc.)",
+            "Gain obtenu : 66% sur le traitement global"
+          ]
+        },
+        {
+          "title": "Tech Leader Data Go",
+          "society": "Figaro Classifieds",
+          "date": "Décembre 2020 à avril 2021 - 5 mois",
+          "description": "Ingestion des annonces d'emploi de plateformes publiques",
+          "tools": [
+            "Go",
+            "GCP",
+            "Terraform",
+            "Kubernetes"
+          ],
+          "tasks": [
+            "ETL : flow pattern en Go",
+            "Contraintes fortes : ingérer plusieurs centaines de milliers d'annonces par jour dans des ressources limitées (proc, mémoire pour GCP)"
+          ]
+        },
+        {
+          "title": "Co-founder & CTO",
+          "society": "Datasweet",
+          "date": "Juillet 2016 à octobre 2022 - 6 ans et 4 mois ",
+          "contact": "Lionel Froment",
+          "description": "Datasweet est une data-plateforme basé sur Elasticsearch et couvrant toute la chaîne de valorisation de données",
+          "tools": [
+            "Go",
+            "React",
+            "Elasticsearch",
+            "Redis",
+            "Postgres",
+            "Protobuf",
+            "Swarm"
+          ],
+          "tasks": [
+            "Conception et développement de la data-plateforme (infra, back-end, front-end)",
+            "Micro (web) services avec Role Based Access Control",
+            "ETL permettant la préparation automatisée de données",
+            "API de search & query utilisée par des composants graphiques"
+          ]
+        },
+        {
+          "title": "Tech Leader .NET",
+          "society": "Natixis AM",
+          "date": "Janvier 2015 à juillet 2016 - 1 an et 6 mois",
+          "contact": "Guillaume Lavergne",
+          "description": "Titan: fwk pour passer des ordres, calculer des positions, rapprocher les flux, etc.",
+          "tools": [
+            ".NET",
+            "SQL Server"
+          ],
+          "tasks": [
+            "Conception et développement d'un service de configuration",
+            "Mise en place de logs via ETW",
+            "Migration du composant CRD (envoi d'ordres) avec une contrainte forte : permettre l'utilisation des deux versions de la dll"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Novencia",
+      "date": "1 an et 8 mois",
+      "experiences": [
+        {
+          "title": "Développeur .NET",
+          "society": "Société Générale CIB",
+          "date": "Mai 2013 à janvier 2015 - 1 an et 8 mois",
+          "contact": "Arnaud Tamaillon",
+          "description": "Projet XOne : SI front-to-back multi-assets",
+          "tools": [
+            ".NET",
+            "Oracle",
+            "WinDBG",
+            "TibcoEMS",
+            "Infragistics",
+            "AngularJS"
+          ],
+          "tasks": [
+            "Enrichissement du framework XOne Generic permettant la création de produits dont les caractéristiques peuvent évoluer à tout moment",
+            "Conception et développement d'un service de booking automatique de produits structurés via messages TibcoEMS",
+            "POC: web trade blotter avec AngularJS"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Développeur Fullstack .NET",
+      "society": "Éditions Larousse",
+      "date": "Octobre 2008 à mai 2013 - 4 ans et 8 mois",
+      "contact": "Vincent Baugé",
+      "tools": [
+        ".NET",
+        "Java",
+        "Perl",
+        "JQuery",
+        "HTML5/CSS3",
+        "Lucene",
+        "Objective-C",
+        "C++"
+      ],
+      "tasks": [
+        "Refonte complète du site www.larousse.fr : SEO, moteur de recherche",
+        "Batchs pour le traitement massif de textes & images",
+        "Applications mobiles : iPhone, iPad, Android, WinJS, Windows Phone",
+        "Ingénieur son et monteur vidéo"
+      ]
+    }
+  ],
+  "trainings": [
+    {
+      "title": "Fondamentaux des marchés financiers",
+      "society": "First Finance",
+      "date": "2013"
+    },
+    {
+      "title": "Ingénieur en informatique - Génie Logiciel",
+      "society": "UTBM",
+      "date": "2008 - Mineur : stratégie d'innovation et choix technologiques"
+    }
+  ],
+  "languages": [
+    {
+      "label": "Français",
+      "level": "Maternelle"
+    },
+    {
+      "label": "Anglais",
+      "level": "Intermédiaire (B1)"
+    },
+    {
+      "label": "Allemand",
+      "level": "Basique (A1)"
+    }
+  ],
+  "hobbies": [
+    "Vélo",
+    "Running",
+    "Escalade",
+    "Judo",
+    "Jeux vidéo",
+    "Piano"
+  ],
+  "layout": {
+    "pages": [
+      {
+        "sider": [
+          "skills"
+        ],
+        "content": [
+          "experiences[:5]"
+        ]
+      },
+      {
+        "sider": [
+          "languages",
+          "hobbies"
+        ],
+        "content": [
+          "experiences[5:]",
+          "trainings"
+        ]
+      }
+    ]
+  }
 }
