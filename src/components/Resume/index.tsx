@@ -44,7 +44,7 @@ const ResumeDisplay: React.FC<{ resume: Resume }> = ({ resume }) => {
     return (<Page
       key={ip}
       header={<Header {...hp} />}
-      sider={p.sider.map((s) => (
+      sider={p.sider && p.sider.map((s) => (
         <section className="flex flex-col" key={s}>
           <Factory data={resume} source={s} />
         </section>

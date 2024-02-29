@@ -1,6 +1,6 @@
 {
   "profile": {
-    "name": "Thomas CHARLOT",
+    "name": "Sarah XXXX",
     "avatar": "/1692695262563.jpeg",
     "title": "Tech lead data fullstack GO / C# / ReactJS",
     "description": "With 15 years of experience, including 7 years as CTO and main craftsman of Datasweet, I acquired a global vision of the software developer profession. Unifying, versatile, autonomous and rigorous, I will bring you the keys to succeed in the development of your projects.",
@@ -73,16 +73,6 @@
         "CQRS",
         "DDD",
         "TDD"
-      ]
-    },
-    {
-      "categorie": "Graphics & Audio",
-      "items": [
-        "Photoshop",
-        "Premiere",
-        "After Effect",
-        "Soundbooth",
-        "Image Magick"
       ]
     }
   ],

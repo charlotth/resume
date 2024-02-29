@@ -15,6 +15,7 @@ export interface ResumeProfile {
 
 export interface ResumeSkill {
   categorie?: string;
+  color?: 'primary' | 'gray',
   items: string[]
 }
 

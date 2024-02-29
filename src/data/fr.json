@@ -16,47 +16,47 @@
         "Go",
         "C#",
         "Typescript",
-        "Shell",
+        "$hell",
         "Java",
         "Python"
       ]
     },
     {
-      "categorie": "Frameworks & Librairies",
+      "categorie": "Frameworks",
       "items": [
         ".NET",
-        "React",
-        "Next.js",
-        "Mobx",
-        "Antd",
-        "Mui",
-        "Tailwind"
+        "react",
+        "next.js",
+        "mobx",
+        "antd",
+        "mui",
+        "tailwind"
       ]
     },
     {
       "categorie": "Base de données",
       "items": [
-        "Oracle",
-        "Postgres",
-        "SQL Server",
-        "Elasticsearch",
-        "Redis",
-        "MongoDB",
-        "Hive"
+        "oracle",
+        "postgres",
+        "mssql",
+        "redis",
+        "elasticsearch",
+        "mongo",
+        "hive"
       ]
     },
     {
       "categorie": "Cloud & Tools",
       "items": [
-        "Docker",
-        "Swarm",
-        "Kubernetes",
+        "docker",
+        "swarm",
+        "k8s",
         "Azure",
         "GCP",
         "IaC",
-        "Nats.io",
-        "RabbitMQ",
-        "Keycloak"
+        "nats.io",
+        "rabbitMQ",
+        "keycloak"
       ]
     },
     {
@@ -69,6 +69,8 @@
         "OAuth",
         "Design patterns",
         "Clean architecture",
+        "EDA",
+        "ITIL",
         "CQRS",
         "DDD",
         "TDD"
@@ -83,6 +85,20 @@
         "Soundbooth",
         "Image Magick"
       ]
+    },
+    {
+      "categorie": "Soft skills",
+      "items": [
+        "Capacité de synthèse",
+        "Esprit critique",
+        "Force de proposition",
+        "Sens du service",
+        "Fédérateur",
+        "Autonome",
+        "Persévérant",
+        "Polyvalent",
+        "Curieux"
+      ]
     }
   ],
   "experiences": [
@@ -90,8 +106,7 @@
       "title": "Practice Leader Data",
       "society": "Capfi",
       "date": "Mars 2023 à aujourd'hui",
-      "contact": "Damien Beaudrey",
-      "description": "Urbanisation SI. Projet basé sur le socle technique Datasweet",
+      "description": "Dans le contexte de l’urbanisation du SI de Capfi, conception et développement d’un orchestrateur de flux de données entre les différentes plateformes utilisées par Capfi (Hubspot, GreenHouse, Fitnet, Strapi).",
       "tools": [
         "Go",
         "React",
@@ -99,43 +114,46 @@
         "Redis",
         "Elasticsearch",
         "Docker",
-        "Selenium"
+        "Selenium",
+        "Encadrement"
       ],
       "tasks": [
         "Ingestion des appels d'offres des plateformes : BNP, Natixis, SG, Engie, etc.",
         "Enrichissement des offres avec l'IA (OpenAI)",
         "Orchestration, centralisation des données d'Hubspot, Strapi et Fitnet",
-        "Création de dashboards analytiques avec Kibana"
+        "Création de dashboards analytiques avec Kibana",
+        "Encadrement de 2 développeurs",
+        "Rôle Practice Leader : validation des profils techniques pour Capfi"
       ]
     },
     {
       "title": "Tech Leader .NET",
       "society": "Société Générale CIB",
       "date": "Novembre 2022 à mars 2023 - 5 mois",
-      "contact": "Marc Girollet",
       "tools": [
         ".NET",
         "Jenkins",
         "WinDBG",
-        "Protobuf"
+        "Protobuf",
+        "Agile"
       ],
-      "description": "XOne Project - Team Infra",
+      "description": "Tech Lead au sein de la team Infra / Core de XOne, système front-to-back multi-assets permettant de gérer la totalité du cycle de vie d'un deal.",
       "tasks": [
-        "Migration de projets .NET4 vers .NET Core 7 et création de pipeline Jenkins",
-        "Détection des erreurs dans les fichiers .protos"
+        "Migration de projets .NET4 vers .NET Core 7",
+        "Création de pipeline Jenkins pour les builds / tests / releases",
+        "Détection des erreurs de compatabilité entre différentes versions de fichiers .proto",
+        "Mise en place du cache LRU"
       ]
     },
     {
       "title": "Altanova",
       "date": "7 ans et 10 mois",
-      "contact": "Lionel Froment",
       "experiences": [
         {
           "title": "Tech Leader Data .NET",
           "society": "Natixis",
           "date": "Mai 2021 à octobre 2022 - 1 an et 6 mois",
-          "contact": "Geoffrey Lardé",
-          "description": "Optimisation du processus de calcul d'observabilité des deals (stock 1M/jour)",
+          "description": "Optimisation de la chaîne de calcul de Link, système permettant de calculer l’observabilité des deals (stock 1M / jour) à partir des données BOP, système permettant de collecter les trades, les positions et les instruments des différents systèmes Front Office utilisés par Natixis.",
           "tools": [
             ".NET",
             "C++",
@@ -143,17 +161,18 @@
             "Autosys"
           ],
           "tasks": [
-            "Profiling .NET via les API Windows",
+            "Création d’un profiler .NET via les API Windows (C++)",
+            "Correction des erreurs techniques (Linq, XmlSerializer, etc.) suite aux données du profiler",
             "Réarchitecture du projet : CQRS, Producer-consumer pattern, multi-threading",
-            "Correction des erreurs techniques (Linq, XmlSerializer, etc.)",
-            "Gain obtenu : 66% sur le traitement global"
+            "Gain obtenu : 66% sur le traitement global",
+            "Duplication des résultats pour les utilisateurs Risk dans Hadoop (Hive)"
           ]
         },
         {
           "title": "Tech Leader Data Go",
           "society": "Figaro Classifieds",
           "date": "Décembre 2020 à avril 2021 - 5 mois",
-          "description": "Ingestion des annonces d'emploi de plateformes publiques",
+          "description": "Dans le cadre d’un projet en incubation visant à refondre les méthodes de capture et à la publication des annonces d'emploi issues des clients Figaro Classifieds et des plateformes publiques.",
           "tools": [
             "Go",
             "GCP",
@@ -161,16 +180,17 @@
             "Kubernetes"
           ],
           "tasks": [
-            "ETL : flow pattern en Go",
-            "Contraintes fortes : ingérer plusieurs centaines de milliers d'annonces par jour dans des ressources limitées (proc, mémoire pour GCP)"
+            "Conception & développement d’un ETL générique basé sur flow pattern en Go",
+            "Contraintes fortes : ingérer plusieurs centaines de milliers d'annonces par jour dans des ressources limitées (proc, mémoire pour GCP)",
+            "Ingestion de la plateforme publique Pôle Emploi",
+            "Formation aux bonnes pratiques des développeurs"
           ]
         },
         {
           "title": "Co-founder & CTO",
           "society": "Datasweet",
           "date": "Juillet 2016 à octobre 2022 - 6 ans et 4 mois ",
-          "contact": "Lionel Froment",
-          "description": "Datasweet est une data-plateforme basé sur Elasticsearch et couvrant toute la chaîne de valorisation de données",
+          "description": "Datasweet est une data-plateforme basée sur Elasticsearch et couvrant toute la chaîne de valorisation des données: de la collecte des données brutes à la diffusion d’informations prêtes à l’emploi.",
           "tools": [
             "Go",
             "React",
@@ -178,29 +198,63 @@
             "Redis",
             "Postgres",
             "Protobuf",
-            "Swarm"
+            "Swarm",
+            "Encadrement",
+            "Sens du service"
           ],
           "tasks": [
-            "Conception et développement de la data-plateforme (infra, back-end, front-end)",
-            "Micro (web) services avec Role Based Access Control",
-            "ETL permettant la préparation automatisée de données",
-            "API de search & query utilisée par des composants graphiques"
+            {
+              "name": "Conception et développement de la data-plateforme (back-end, front-end)",
+              "tasks": [
+                "Framework générique en Go utilisé dans chaque projet Datasweet",
+                "Micro-services avec RBAC et protobufs",
+                "ETL permettant la préparation automatisée de données avec de nombreux connecteurs (csv, sql, google analytics, etc.)",
+                "API de search & query pour requêter simplement Elasticsearch",
+                "Composants en Go open-sources : datatable (manipulation de données tabulaires avec évaluation d'expressions), jsonmap (manipulation de json)",
+                "Conception & développement des front-ends unifiés, des dataviz en React.js"
+              ]
+            },
+            "Contributeur sur le plugin ReadOnlyRest pour Elasticsearch (Java)",
+            {
+              "name": "Infra",
+              "tasks": [
+                "Installation des serveurs avec chiffrement des disques",
+                "Sauvegarde / restauration de backups chiffrés",
+                "Reverse-proxy avec load balancing et SSL (letsencrypt)",
+                "Création des chaînes de CI/CD avec CircleCI et Github Actions",
+                "Healthcheck",
+                "Gestion docker, swarm, kubernetes"
+              ]
+            },
+            {
+              "name": "Relation clients",
+              "tasks": [
+                "Aide à la recherche de prospects",
+                "Aide à la réalisation de devis, dossiers de sécurité",
+                "Gestion de projets: AMOA et référent technique",
+                "Support & QoS"
+              ]
+            },
+            "Encadrement de 5 personnes: 2 développeurs, 1 AMOA et 2 stagiaires."
           ]
         },
         {
           "title": "Tech Leader .NET",
           "society": "Natixis AM",
           "date": "Janvier 2015 à juillet 2016 - 1 an et 6 mois",
-          "contact": "Guillaume Lavergne",
-          "description": "Titan: fwk pour passer des ordres, calculer des positions, rapprocher les flux, etc.",
+          "description": "Conception et développement autour de Titan, un framework en .NET , utilisé par des applications Front découpées en fonds. Titan permet à des clients lourds ou web de réaliser de nombreuses opérations : passage d’ordres, calcul de positions, rapprochement de positions et flux, simulation sur inventaire, etc.",
           "tools": [
             ".NET",
-            "SQL Server"
+            "SQL Server",
+            "Encadrement"
           ],
           "tasks": [
-            "Conception et développement d'un service de configuration",
+            "Conception et développement d'un service de configuration centralisé avec lecture à chaud",
             "Mise en place de logs via ETW",
-            "Migration du composant CRD (envoi d'ordres) avec une contrainte forte : permettre l'utilisation des deux versions de la dll"
+            "Migration du composant CRD (envoi d'ordres) avec une contrainte forte : permettre l'utilisation des deux versions de la dll",
+            "Simulation d'un utilisateur humain par la création d'un bot AutoIT",
+            "Aide au suivi de qualité du code, formation des développeurs aux bonnes pratiques",
+            "Encadrement de 2 développeurs"
           ]
         }
       ]
@@ -213,7 +267,6 @@
           "title": "Développeur .NET",
           "society": "Société Générale CIB",
           "date": "Mai 2013 à janvier 2015 - 1 an et 8 mois",
-          "contact": "Arnaud Tamaillon",
           "description": "Projet XOne : SI front-to-back multi-assets",
           "tools": [
             ".NET",
@@ -221,12 +274,13 @@
             "WinDBG",
             "TibcoEMS",
             "Infragistics",
-            "AngularJS"
+            "AngularJS",
+            "Encadrement"
           ],
           "tasks": [
             "Enrichissement du framework XOne Generic permettant la création de produits dont les caractéristiques peuvent évoluer à tout moment",
-            "Conception et développement d'un service de booking automatique de produits structurés via messages TibcoEMS",
-            "POC: web trade blotter avec AngularJS"
+            "Conception et développement d'un service de booking automatique de produits structurés via des messages XML TibcoEMS. Encadrement d'un développeur",
+            "POC: web trade blotter avec AngularJS - Team architecture"
           ]
         }
       ]
@@ -235,7 +289,7 @@
       "title": "Développeur Fullstack .NET",
       "society": "Éditions Larousse",
       "date": "Octobre 2008 à mai 2013 - 4 ans et 8 mois",
-      "contact": "Vincent Baugé",
+      "description": "Au sein du département Informatique Éditoriale, planification et développement de projets web, mobiles, backends et médias.",
       "tools": [
         ".NET",
         "Java",
@@ -244,13 +298,17 @@
         "HTML5/CSS3",
         "Lucene",
         "Objective-C",
-        "C++"
+        "C++",
+        "Encadrement"
       ],
       "tasks": [
-        "Refonte complète du site www.larousse.fr : SEO, moteur de recherche",
+        "Refonte du site www.larousse.fr : SEO, moteur de recherche, réseaux sociaux, ads",
+        "Fusion des différentes bases de comptes clients",
         "Batchs pour le traitement massif de textes & images",
+        "Participation à la WWDC Apple Convention de 2010 à San Francisco",
         "Applications mobiles : iPhone, iPad, Android, WinJS, Windows Phone",
-        "Ingénieur son et monteur vidéo"
+        "Ingénieur son et monteur vidéo, réalisation d'un DVD",
+        "Encadrement de 3 développeurs (dont 2 prestataires) et d'une stagaire UI"
       ]
     }
   ],
@@ -286,25 +344,34 @@
     "Escalade",
     "Judo",
     "Jeux vidéo",
-    "Piano"
+    "Piano",
+    "Cuisine"
   ],
   "layout": {
     "pages": [
       {
         "sider": [
-          "skills"
+          "skills[:5]"
         ],
         "content": [
-          "experiences[:5]"
+          "experiences[:4]"
         ]
       },
       {
         "sider": [
-          "languages",
+          "skills[5:]",
+          "languages"
+        ],
+        "content": [
+          "experiences[4:6]"
+        ]
+      },
+      {
+        "sider": [
           "hobbies"
         ],
         "content": [
-          "experiences[5:]",
+          "experiences[6:]",
           "trainings"
         ]
       }
