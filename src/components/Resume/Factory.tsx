@@ -67,16 +67,16 @@ export const Factory: React.FC<{ source: string; data: Resume, page?: number }> 
         case 'skills':
             return (
                 <>
-                    <Title>Compétences</Title>
+                    <Title>Skills</Title>
                     {(d.items as Resume['skills']).map((v, i) => (
-                        <SkillGroup title={v.categorie} skills={v.items} key={i} />
+                        <SkillGroup title={v.categorie} skills={v.items} key={i} color={v.color} />
                     ))}
                 </>
             );
         case 'experiences':
             return (
                 <>
-                    {!page && (<Title>Expériences</Title>)}
+                    {!page && (<Title>Work Experience</Title>)}
                     {(d.items as Resume['experiences']).map((v, i) => (
                         <Experience {...v} key={i} />
                     ))}
@@ -85,7 +85,7 @@ export const Factory: React.FC<{ source: string; data: Resume, page?: number }> 
         case 'trainings':
             return (
                 <>
-                    <Title>Formations</Title>
+                    <Title>Education</Title>
                     {(d.items as Resume['trainings']).map((v, i) => (
                         <Experience {...v} key={i} />
                     ))}
@@ -94,7 +94,7 @@ export const Factory: React.FC<{ source: string; data: Resume, page?: number }> 
         case 'hobbies':
             return (
                 <>
-                    <Title>Loisirs</Title>
+                    <Title>Hobbies</Title>
                     <SkillGroup skills={d.items as Resume['hobbies']} />
                 </>
             )
@@ -102,7 +102,7 @@ export const Factory: React.FC<{ source: string; data: Resume, page?: number }> 
         case 'languages':
             return (
                 <>
-                    <Title>Langues</Title>
+                    <Title>Languages</Title>
                     <Languages items={d.items as Resume['languages']} />
                 </>
             );

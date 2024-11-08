@@ -62,4 +62,8 @@ body {
     cursor: pointer;
     outline: none;
   }
+
+  .main-exp + .sub-exp {
+    margin-top: -1rem;
+  }
 }
